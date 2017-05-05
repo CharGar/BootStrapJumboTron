@@ -1,0 +1,84 @@
+.inputContainer{
+  text-align: center;
+}
+.inputContainer{
+  margin-bottom: 15px;
+}
+
+h1,.jumbotron{
+  background-image: url('https://media1.giphy.com/media/mciuYvRiaMgla/giphy.gif');
+  background-size: contain;
+  font-size: 120px !important;
+  text-shadow: 3px 3px 3px black;
+  text-align: center;
+  color:red;
+  font-family: 'Audiowide', cursive;
+}
+.inputs{
+    height: 35px;
+}
+  @keyframes button{
+  0%   {background-color:red;}
+  25%  {background-color:yellow;}
+  50%  {background-color:#BF55EC;}
+  75%  {background-color:green;}
+  100% {background-color:red;}
+}
+/* The element to apply the animation to */
+button {
+  box-shadow: 3px 3px 3px black;
+  background-color: red;
+  animation-name: button;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+#submit, .removeButton{
+  color: black ;
+  margin-bottom: 10px;
+}
+
+body{
+  background-image: url('http://i.makeagif.com/media/11-19-2015/1p_6nY.gif');
+  background-size: cover;
+}
+
+.albumCover{
+  width: 300px;
+  height: 300px;
+  margin-top: 10px;
+  box-shadow: 3px 3px 3px white;
+}
+
+.label{
+  color: cyan;
+  font-family: 'Audiowide', cursive;
+  font-size: 48px;
+  text-shadow: 3px 3px 3px white;
+}
+
+p{
+  color: darkcyan;
+  font-size: 25px;
+  text-shadow: 1px 1px 1px white;
+  font-family: 'Audiowide', cursive;
+
+}
+.card{
+  text-align: center;
+
+}
+
+h1:hover {
+    -webkit-animation: shake 0.1s ease-in-out 0.1s infinite alternate;
+}
+
+@-webkit-keyframes shake {
+ from {
+    -webkit-transform: rotate(10deg);
+ }
+ to {
+   -webkit-transform-origin:center center;
+   -webkit-transform: rotate(-10deg);
+ }
+
+}
