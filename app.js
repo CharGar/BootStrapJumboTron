@@ -43,8 +43,20 @@ app.post('/addAlbum', function(req, res) {
   });
 });
 
-app.put('/update', function( req, res ){
-
+app.put('/updateAlbum', function( req, res ){
+  console.log('in updateAlbum:', req.body);
+  album.update(
+   {_id: req.body._id},
+   {$set:
+     {
+       artist: req.body.artist,
+       album: req.body.album,
+       imgUrl: req.body.imgUrl,
+       releaseYear: req.body.releaseYear
+     }
+   }
+)
+  res.sendStatus( 201 );
 });
 
 app.delete('/deleteAlbum/:id', function( req, res ){
@@ -57,5 +69,5 @@ app.delete('/deleteAlbum/:id', function( req, res ){
       res.send( 200 )
     }
 
-});
+  });
 });

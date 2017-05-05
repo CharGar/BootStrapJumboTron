@@ -31,15 +31,16 @@ button {
   animation-name: button;
   animation-duration: 8s;
   animation-iteration-count: infinite;
+  width: 100px;
 }
 #submit, .removeButton{
   color: black ;
-  margin-bottom: 10px;
 }
 
 body{
   background-image: url('http://i.makeagif.com/media/11-19-2015/1p_6nY.gif');
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .albumCover{
@@ -65,7 +66,7 @@ p{
 }
 .card{
   text-align: center;
-
+  padding-bottom: 10px;
 }
 
 h1:hover {
@@ -82,3 +83,18 @@ h1:hover {
  }
 
 }
+
+/*input:focus {
+    -webkit-animation: shake 0.1s ease-in-out 0.1s infinite alternate;
+}
+
+@-webkit-keyframes shake {
+ from {
+    -webkit-transform: rotate(10deg);
+ }
+ to {
+   -webkit-transform-origin:center center;
+   -webkit-transform: rotate(-10deg);
+ }
+
+}*/
